@@ -1,0 +1,9 @@
+Flask==0.10.1
+Flask-Bootstrap==3.1.1.2
+Jinja2==2.7.3
+MarkupSafe==0.23
+Werkzeug==0.9.6
+gunicorn==19.0.0
+itsdangerous==0.24
+pycrypto==2.6.1
+-e git+https://github.com/owenfi/crypto-pkcs7-example.git#egg=pkcs

@@ -1,0 +1,14 @@
+<xml>
+    <Encrypt>
+        <![CDATA[{{ message }}]]>
+    </Encrypt>
+    <MsgSignature>
+        <![CDATA[{{ signature }}]]>
+    </MsgSignature>
+    <TimeStamp>
+        <![CDATA[{{ timestamp }}]]>
+    </TimeStamp>
+    <Nonce>
+        <![CDATA[{{ nonce }}]]>
+    </Nonce>
+</xml>
