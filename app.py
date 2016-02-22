@@ -17,13 +17,8 @@ from flask import Flask, make_response, render_template, request
 from pkcs7 import PKCS7Encoder
 
 
-app = Flask(__name__)
-
-WECHAT_TOKEN = None
-WECHAT_ENCODINGAESKEY = None
-WECHAT_CORPID = None
-
-app.config.from_object(__name__)
+app = Flask(__name__, instance_relative_config=True)
+app.config.from_pyfile('config.py')
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -184,7 +179,7 @@ def detect_configuration():
     corpid = app.config['WECHAT_CORPID']
 
     if (token and aeskey and corpid) is None:
-        raise Exception('missing wechat configuration!')
+        raise Exception('missing wechat enterprise app keys!')
 
 
 if __name__ == '__main__':
