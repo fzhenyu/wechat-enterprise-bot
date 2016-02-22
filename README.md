@@ -12,8 +12,6 @@ $ git clone https://github.com/j1wu/wechat-enterprise-bot.git
 ```
 Step 2. Add your wechat enterprise app keys to `instance/config.py` (replace `None`)
 
-![](https://cloud.githubusercontent.com/assets/5327840/13209245/bb2354e6-d95c-11e5-8197-e9c3b66be42a.png)
-
 Step 3. Install virtualenv
 ```bash
 $ sudo easy_install virtualenv

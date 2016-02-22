@@ -5,7 +5,7 @@ import sys
 import time
 import xml.etree.cElementTree as ET
 
-from WXBizMsgCrypt import WXBizMsgCrypt
+from wechat.WXBizMsgCrypt import WXBizMsgCrypt
 
 from flask import Flask, Response, render_template, request
 
@@ -33,7 +33,7 @@ def index():
 
         ret, echostr = wxcryptor.VerifyURL(msg_signature, timestamp,
                                            nonce, echostr)
-        if (ret != 0):
+        if ret != 0:
             sys.exit(1)
         else:
             return echostr
