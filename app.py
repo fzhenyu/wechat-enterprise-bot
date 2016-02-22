@@ -50,7 +50,7 @@ def index():
         reply = generate_reply(user_input)
 
         response = generate_response(message, reply)
-        ret, encrypted_message = wxcryptor.EncryptMsg(response,
+        ret, encrypted_message = wxcryptor.EncryptMsg(response.encode('utf-8'),
                                                       nonce, timestamp)
 
         return Response(encrypted_message,
