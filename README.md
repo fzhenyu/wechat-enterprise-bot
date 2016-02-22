@@ -96,3 +96,8 @@ Step 6. Deploy to heroku
 (venv) $ git push heroku master
 ```
 Step 7. Update your wechat app configuration with the heroku app url
+
+
+###Acknowledgments
+
+Thanks to [Bob](https://github.com/iambocai)'s [Python connector weixin qy](https://github.com/iambocai/python-connector-weixin-qy) project to make my bot possible :)
