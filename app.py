@@ -58,7 +58,8 @@ def index():
 
 
 def get_user_input(message):
-    return message['Content']
+    app.logger.debug(message)
+    return message.get('Content', '')
 
 
 def generate_reply(user_input):
